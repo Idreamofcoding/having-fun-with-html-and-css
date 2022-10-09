@@ -1,0 +1,72 @@
+.room-one {
+    height: 65vh;
+    width: 100%;
+    display: flex;
+}
+
+.room-1-box {
+    width: 30%;
+    height: 65vh;
+    padding-top: 200px;
+    text-align: center;
+    background-color: #F8EDE3;
+}
+
+.room-1-box h2 {
+    margin-bottom: 20px;
+}
+
+.room-1-rectangle {
+    width: 70%;
+    height: 65vh;
+    background-color: peachpuff;
+}
+
+.room-1-rectangle img {
+    width: 100%;
+    height: 65vh;
+}
+
+/* Room Two */
+
+.room-two {
+    height: 65vh;
+    width: 100%;
+    display: flex;
+}
+
+.room-2-rectangle {
+    width: 70%;
+    height: 65vh;
+    background-color: peachpuff;
+}
+
+.room-2-rectangle img {
+    width: 100%;
+    height: 65vh;
+}
+
+
+.room-2-box {
+    width: 30%;
+    height: 65vh;
+    padding-top: 200px;
+    text-align: center;
+    background-color: #E14D2A;
+}
+
+.room-2-box h2 {
+    margin-bottom: 20px;
+}
+
+/* Room Three */
+
+.room-three {
+    width: 100%;
+    height: 200vh;
+}
+
+.room-3-portrait img {
+    width: 100%;
+    height: 200vh;
+}

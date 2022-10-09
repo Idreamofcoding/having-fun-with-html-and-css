@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hero {
+    height: 100vh;
+}
+
+.hero img {
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+}
+
+.image__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+    color: #ffffff;
+    margin: 0px;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 2.2em;
+    right: 0.5em;
+    font-size: 7em;
+    font-family: 'GFS Didot', serif;
+    color: white;
+}
+
+/* 4 images on left side of hero */
+
+.hero-four {
+    position: absolute;
+    top: 12em;
+    left: 100px;
+    width: 500px;
+    margin: 0px;
+}
+
+.hero-four img {
+    width: 230px;
+    height: 190px;
+    border-radius: 15px;
+    object-fit: cover;
+    overflow: hidden;
+    margin: 0px;
+
+}
+
+.hero-four img:first-child {
+    padding-right: 5px;
+    padding-bottom: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-four img:nth-child(2) {
+    padding-left: 5px;
+    padding-bottom: 5px;
+    overflow: hidden;
+
+}
+
+.hero-four img:nth-child(3) {
+    padding-right: 5px;
+    padding-top: 5px;
+    overflow: hidden;
+
+}
+
+
+.hero-four img:nth-child(4) {
+    padding-left: 5px;
+    padding-top: 5px;
+    overflow: hidden;
+    position: relative;
+
+
+}
+
+#coupleInPark {
+    /* transform: translateY(-30px); */
+}
+
+
+/* Add Hover to 4 images in hero */
+
+.hero-four img:hover {
+    transform: scale(1.2);
+    overflow: hidden;
+}
