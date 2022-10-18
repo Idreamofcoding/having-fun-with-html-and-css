@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&family=GFS+Neohellenic&family=Great+Vibes&display=swap');
 
 * {
     margin: 0;
@@ -30,11 +29,27 @@
 
 .hero h1 {
     position: absolute;
-    top: 2.2em;
+    top: 2.1em;
     right: 0.5em;
     font-size: 7em;
     font-family: 'GFS Didot', serif;
     color: white;
+    /* text-transform: uppercase; */
+}
+
+.hero p {
+    position: absolute;
+    top: 9em;
+    right: 1.3em;
+    font-size: 3em;
+    font-family: 'GFS Didot', serif;
+    color: white;
+    text-transform: uppercase;
+}
+
+.hero p a {
+    color: white;
+    text-decoration: none;
 }
 
 /* 4 images on left side of hero */
@@ -54,7 +69,6 @@
     object-fit: cover;
     overflow: hidden;
     margin: 0px;
-
 }
 
 .hero-four img:first-child {
@@ -62,12 +76,14 @@
     padding-bottom: 5px;
     overflow: hidden;
     position: relative;
+    animation: changeDirections 2s infinite alternate;
 }
 
 .hero-four img:nth-child(2) {
     padding-left: 5px;
     padding-bottom: 5px;
     overflow: hidden;
+    animation: changeDirectionss 2s infinite alternate;
 
 }
 
@@ -75,7 +91,7 @@
     padding-right: 5px;
     padding-top: 5px;
     overflow: hidden;
-
+    animation: changeDirectionss-1 2s infinite alternate;
 }
 
 
@@ -84,8 +100,7 @@
     padding-top: 5px;
     overflow: hidden;
     position: relative;
-
-
+    animation: changeDirectionss-2 2s infinite alternate;
 }
 
 #coupleInPark {
@@ -95,7 +110,72 @@
 
 /* Add Hover to 4 images in hero */
 
-.hero-four img:hover {
+/* .hero-four img:hover {
     transform: scale(1.2);
     overflow: hidden;
+    transition: 1s;
+} */
+
+.hero-four img:first-child {
+    
 }
+
+@keyframes changeDirections {
+    0% {
+    }
+    100% {
+        transform: translateY(105%);
+    }
+}
+
+@keyframes changeDirectionss {
+    0% {
+    }
+    100% {
+        transform: translateX(-105%);
+    }
+}
+
+@keyframes changeDirectionss-1 {
+    0% {
+    }
+    100% {
+        transform: translateX(105%);
+    }
+}
+
+@keyframes changeDirectionss-2 {
+    0% {
+    }
+    100% {
+        transform: translateY(-105%);
+    }
+}
+
+
+.link__hover-effect {
+    position: relative;
+  }
+  
+  .link__hover-effect--white:after {
+    background-color: #fff;
+  }
+  
+  .link__hover-effect--black:after {
+    background-color: #790252;
+  }
+  
+  .link__hover-effect:after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    height: 3px;
+    width: 0;
+    right: 0;
+    transition: all 300ms ease;
+  }
+
+  .link__hover-effect:hover:after {
+    left: 0;
+    width: 100%;
+  }
